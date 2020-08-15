@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="menu">
+        <ui>
+            <li><a href="#" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#" onclick="toggleMenu();">About</a></li>
+            <li><a href="#" onclick="toggleMenu();">Training</a></li>
+            <li><a href="#" onclick="toggleMenu();">Team</a></li>
+            <li><a href="#" onclick="toggleMenu();">Contact</a></li>
+        </ui>
+    </div>
+    <section class="banner">
+        <header>
+            <h2 class="logo">My Logo</h2>
+            <div class="toggle" onclick="toggleMenu();"></div>
+        </header>
+        <video src="bg.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Be Strong</h2>
+            <h1>Never Give Up</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum eius dolorum eum, explicabo quod molestiae nisi numquam accusamus quam sunt quidem! Adipisci alias nulla fuga deserunt, repellendus voluptate distinctio ad?</p>
+            <a href="#">Join us</a>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+    function toggleMenu(){
+        var menuToggle = document.querySelector('.toggle');
+        var banner = document.querySelector('.banner');
+        menuToggle.classList.toggle('active');
+        banner.classList.toggle('active');
+    }   
+    </script>
+
+</body>
+</html>
