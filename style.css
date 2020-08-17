@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif; 
 }
+
 section
 {
     position: absolute;
@@ -107,6 +108,7 @@ section video
     font-weight: 400;
     max-width: 700px;
     color: #fff;
+    text-align: justify;
 }
 .text a
 {
@@ -154,17 +156,18 @@ section video
     /* z-index: 10; */
     background: #fff;
 }
-.menu ui
+.menu ul
 {
     position: relative;
+    list-style: none;
 }
-.menu ui li
+.menu ul li
 {
     position: relative;
     list-style: none;
     text-align: center;
 }
-.menu ui li a
+.menu ul li a
 {
     text-decoration: none;
     font-size: 24px;
